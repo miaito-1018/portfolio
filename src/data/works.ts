@@ -27,7 +27,7 @@ export const works: Work[] = [
     category: 'TV / 企業告知',
     year: '2024–2025',
     description: '福岡の「アサデス。」や「ももち浜ストア」など、各TV局に企業告知で出演。',
-    image: '/profile/photo-02.jpg',
+    image: '/profile/photo-01.jpg',
     span: 'a',
   },
   {
@@ -63,7 +63,7 @@ export const works: Work[] = [
     category: 'Award',
     year: '2022',
     description: 'グランプリを受賞し、表参道駅に巨大広告掲載。',
-    image: '/profile/photo-01.jpg',
+    image: '/profile/photo-02.jpg',
     span: 'e',
   },
   {
