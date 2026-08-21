@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <a
             href="#top"
-            className="font-display text-[.72rem] font-semibold uppercase leading-[1.15] tracking-wide"
+            className="-rotate-2 inline-block font-hand text-[.85rem] leading-[1.2] tracking-wide"
           >
             <span className="block">Who is</span>
             <span className="block">Mia？</span>

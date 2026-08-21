@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
+import { SquiggleUnderline } from './Scribble'
 import { asset } from '../lib/asset'
 import { facts } from '../data/profile'
 
@@ -20,13 +21,17 @@ export default function About() {
           <p className="max-w-[26rem] font-display text-[clamp(1.9rem,4vw,3.2rem)] font-normal leading-[1.22] tracking-tight">
             元電気工事士から、
             <br />
-            <span className="italic text-accent">伝える人</span> へ。
+            <span className="relative inline-block italic text-accent">
+              伝える人
+              <SquiggleUnderline className="absolute -bottom-1 left-0 h-2 w-full text-accent" />
+            </span>{' '}
+            へ。
           </p>
         </Reveal>
 
-        <Reveal delay={1} className="mt-14 flex max-w-md gap-4">
-          <div className="w-1/2 overflow-hidden rounded-sm">
-            <div className="aspect-[3/4]">
+        <Reveal delay={1} className="mt-16 flex max-w-md gap-6">
+          <div className="w-1/2 -rotate-3 rounded-sm bg-bg p-2 shadow-[0_8px_20px_-10px_rgba(24,20,15,.4)]">
+            <div className="aspect-[3/4] overflow-hidden">
               <img
                 src={asset('/profile/photo-04.jpg')}
                 alt="伊藤水晶のポートレート"
@@ -34,8 +39,8 @@ export default function About() {
               />
             </div>
           </div>
-          <div className="mt-8 w-1/2 overflow-hidden rounded-sm">
-            <div className="aspect-[3/4]">
+          <div className="mt-8 w-1/2 rotate-2 rounded-sm bg-bg p-2 shadow-[0_8px_20px_-10px_rgba(24,20,15,.4)]">
+            <div className="aspect-[3/4] overflow-hidden">
               <img
                 src={asset('/profile/photo-07.jpg')}
                 alt="伊藤水晶のポートレート"

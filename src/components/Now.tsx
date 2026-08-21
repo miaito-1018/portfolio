@@ -11,7 +11,7 @@ export default function Now() {
           <Reveal
             as="li"
             delay={i}
-            key={item.label}
+            key={item.value}
             className={`grid grid-cols-1 gap-1 border-t border-line py-6 sm:grid-cols-[9rem_1fr] sm:gap-6 ${
               i === nowItems.length - 1 ? 'border-b' : ''
             }`}
