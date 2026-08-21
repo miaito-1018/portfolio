@@ -19,7 +19,7 @@ export const nowItems: NowItem[] = [
   },
   {
     label: 'On air',
-    value: 'ホリエモンAI学校(株)広報担当として、CROSS FM「ai未来予報」に不定期で週1回ほど出演',
+    value: 'ホリエモンAI学校 マナビバ校 広報担当として、CROSS FM「ai未来予報」に不定期で週1回ほど出演',
   },
   {
     label: 'Special skill',

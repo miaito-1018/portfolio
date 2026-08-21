@@ -35,7 +35,7 @@ export const works: Work[] = [
     name: 'ai未来予報',
     category: 'Radio',
     year: '2026',
-    description: 'ホリエモンAI学校(株)広報担当として、CROSS FM「ai未来予報」に不定期で週1回ほど出演。',
+    description: 'ホリエモンAI学校 マナビバ校 広報担当として、CROSS FM「ai未来予報」に不定期で週1回ほど出演。',
     image: '/profile/photo-05.jpg',
     span: 'b',
   },
