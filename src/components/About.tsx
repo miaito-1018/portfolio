@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
+import { asset } from '../lib/asset'
 import { facts } from '../data/profile'
 
 const history = [
@@ -27,7 +28,7 @@ export default function About() {
           <div className="w-1/2 overflow-hidden rounded-sm">
             <div className="aspect-[3/4]">
               <img
-                src="/profile/photo-04.jpg"
+                src={asset('/profile/photo-04.jpg')}
                 alt="伊藤水晶のポートレート"
                 className="h-full w-full object-cover grayscale-[20%]"
               />
@@ -36,7 +37,7 @@ export default function About() {
           <div className="mt-8 w-1/2 overflow-hidden rounded-sm">
             <div className="aspect-[3/4]">
               <img
-                src="/profile/photo-07.jpg"
+                src={asset('/profile/photo-07.jpg')}
                 alt="伊藤水晶のポートレート"
                 className="h-full w-full object-cover grayscale-[20%]"
               />

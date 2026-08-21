@@ -1,5 +1,6 @@
 import Reveal from './Reveal'
 import SectionHead from './SectionHead'
+import { asset } from '../lib/asset'
 import { works, type Work } from '../data/works'
 
 const layout: Record<Work['span'], { grid: string; aspect: string }> = {
@@ -25,7 +26,7 @@ function WorkCard({ work, delay }: { work: Work; delay: number }) {
           className={`block overflow-hidden rounded-sm bg-bg-raised ${aspect}`}
         >
           <img
-            src={work.image}
+            src={asset(work.image)}
             alt={`${work.name} — ${work.description}`}
             loading="lazy"
             className="h-full w-full origin-center scale-[1.01] object-cover grayscale-[45%] contrast-[1.02] transition-all duration-[1100ms] ease-out group-hover:scale-[1.06] group-hover:grayscale-0 group-focus-within:scale-[1.06] group-focus-within:grayscale-0"

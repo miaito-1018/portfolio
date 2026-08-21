@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { asset } from '../lib/asset'
 
 export default function Hero() {
   return (
@@ -34,7 +35,7 @@ export default function Hero() {
 
         <Reveal delay={2} className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-sm md:max-w-none">
           <img
-            src="/profile/photo-01.jpg"
+            src={asset('/profile/photo-01.jpg')}
             alt="伊藤水晶のポートレート"
             className="h-full w-full object-cover grayscale-[35%] contrast-[1.02] transition-all duration-[1200ms] ease-out hover:grayscale-0"
           />
