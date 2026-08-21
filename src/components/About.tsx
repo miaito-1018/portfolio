@@ -29,22 +29,22 @@ export default function About() {
           </p>
         </Reveal>
 
-        <Reveal delay={1} className="mt-16 flex max-w-md gap-6">
-          <div className="w-1/2 -rotate-3 rounded-sm bg-bg p-2 shadow-[0_8px_20px_-10px_rgba(24,20,15,.4)]">
-            <div className="aspect-[3/4] overflow-hidden">
+        <Reveal delay={1} className="mt-16 flex max-w-lg gap-8">
+          <div className="w-1/2 overflow-hidden rounded-sm">
+            <div className="aspect-[3/4]">
               <img
                 src={asset('/profile/photo-04.jpg')}
                 alt="伊藤水晶のポートレート"
-                className="h-full w-full object-cover grayscale-[20%]"
+                className="h-full w-full object-cover"
               />
             </div>
           </div>
-          <div className="mt-8 w-1/2 rotate-2 rounded-sm bg-bg p-2 shadow-[0_8px_20px_-10px_rgba(24,20,15,.4)]">
-            <div className="aspect-[3/4] overflow-hidden">
+          <div className="mt-10 w-1/2 overflow-hidden rounded-sm">
+            <div className="aspect-[3/4]">
               <img
                 src={asset('/profile/photo-07.jpg')}
                 alt="伊藤水晶のポートレート"
-                className="h-full w-full object-cover grayscale-[20%]"
+                className="h-full w-full object-cover"
               />
             </div>
           </div>

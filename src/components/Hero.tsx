@@ -1,6 +1,6 @@
 import Reveal from './Reveal'
 import { asset } from '../lib/asset'
-import { SquiggleUnderline, CircleScribble } from './Scribble'
+import { SquiggleUnderline } from './Scribble'
 
 export default function Hero() {
   return (
@@ -8,9 +8,7 @@ export default function Hero() {
       id="top"
       className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden px-[var(--container-pad)] pb-[clamp(4rem,8vw,6rem)] pt-[clamp(6rem,12vw,9rem)]"
     >
-      <div className="notebook-dots pointer-events-none absolute inset-0" aria-hidden="true" />
-
-      <div className="relative grid items-center gap-12 md:grid-cols-[1.3fr_1fr] md:gap-10">
+      <div className="grid items-center gap-12 md:grid-cols-[1.3fr_1fr] md:gap-10">
         <div className="max-w-[40rem]">
           <Reveal>
             <p className="mb-[clamp(1rem,3vw,1.8rem)] font-mono text-[.82rem] text-ink-soft">Profile — 2026</p>
@@ -24,21 +22,20 @@ export default function Hero() {
             </Reveal>
           </h1>
 
-          <Reveal delay={2} className="mt-4 ml-[.3em] inline-block -rotate-3">
-            <span className="relative inline-block font-hand text-[clamp(1.4rem,3.4vw,2rem)] text-accent">
+          <Reveal delay={2} className="ml-[.4em] mt-3 inline-block -rotate-2">
+            <span className="relative inline-block font-hand text-[clamp(1.8rem,4.4vw,2.6rem)] font-semibold text-accent">
               Mia Ito
-              <SquiggleUnderline className="absolute -bottom-1.5 left-0 h-2 w-full text-accent" />
+              <SquiggleUnderline className="absolute -bottom-1 left-0 h-1.5 w-full text-accent" />
             </span>
           </Reveal>
 
           <Reveal delay={3}>
-            <p className="mt-[clamp(1.8rem,4vw,2.8rem)] -rotate-1 font-mono text-[clamp(.95rem,1.6vw,1.15rem)] text-ink-soft">
-              Model <span className="mx-[.2em] text-accent">/</span>
-              <span className="relative mx-[.15em] inline-block">
-                MC
-                <CircleScribble className="pointer-events-none absolute -inset-x-2 -inset-y-2 text-accent" />
-              </span>
-              <span className="mx-[.2em] text-accent">/</span> Reporter
+            <p className="mt-[clamp(1.8rem,4vw,2.8rem)] font-mono text-[clamp(.95rem,1.6vw,1.15rem)] text-ink-soft">
+              <span className="inline-block">Model</span>{' '}
+              <span className="mx-[.1em] text-accent">/</span>{' '}
+              <span className="inline-block -translate-y-[.15em]">MC</span>{' '}
+              <span className="mx-[.1em] text-accent">/</span>{' '}
+              <span className="inline-block translate-y-[.1em]">Reporter</span>
             </p>
           </Reveal>
 
@@ -49,17 +46,12 @@ export default function Hero() {
           </Reveal>
         </div>
 
-        <Reveal
-          delay={2}
-          className="relative mx-auto aspect-[4/5] w-full max-w-sm rotate-2 overflow-hidden rounded-sm bg-bg p-2 shadow-[0_10px_30px_-12px_rgba(24,20,15,.35)] md:max-w-none"
-        >
-          <div className="h-full w-full overflow-hidden">
-            <img
-              src={asset('/profile/photo-01.jpg')}
-              alt="伊藤水晶のポートレート"
-              className="h-full w-full object-cover grayscale-[35%] contrast-[1.02] transition-all duration-[1200ms] ease-out hover:grayscale-0"
-            />
-          </div>
+        <Reveal delay={2} className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-sm md:max-w-none">
+          <img
+            src={asset('/profile/photo-01.jpg')}
+            alt="伊藤水晶のポートレート"
+            className="h-full w-full object-cover"
+          />
         </Reveal>
       </div>
 

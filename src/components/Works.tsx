@@ -29,7 +29,7 @@ function WorkCard({ work, delay }: { work: Work; delay: number }) {
             src={asset(work.image)}
             alt={`${work.name} — ${work.description}`}
             loading="lazy"
-            className="h-full w-full origin-center scale-[1.01] object-cover grayscale-[45%] contrast-[1.02] transition-all duration-[1100ms] ease-out group-hover:scale-[1.06] group-hover:grayscale-0 group-focus-within:scale-[1.06] group-focus-within:grayscale-0"
+            className="h-full w-full origin-center scale-[1.01] object-cover transition-transform duration-[1100ms] ease-out group-hover:scale-[1.06] group-focus-within:scale-[1.06]"
           />
         </a>
         <div className="mt-[1.1rem]">

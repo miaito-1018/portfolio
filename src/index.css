@@ -12,7 +12,7 @@
   --font-display: 'Fraunces', 'Noto Serif JP', serif;
   --font-body: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
-  --font-hand: 'Permanent Marker', cursive;
+  --font-hand: 'Caveat', cursive;
 }
 
 :root {
@@ -69,13 +69,6 @@ section {
   scroll-margin-top: 5.5rem;
 }
 
-/* Faint dot-grid, notebook-paper texture */
-.notebook-dots {
-  background-image: radial-gradient(var(--color-ink) 1px, transparent 1px);
-  background-size: 22px 22px;
-  background-position: -4px -4px;
-  opacity: 0.05;
-}
 
 @keyframes scroll-pulse {
   0% {

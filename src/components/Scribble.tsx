@@ -10,7 +10,7 @@ export function SquiggleUnderline({ className = '' }: ScribbleProps) {
         d="M2 10 Q 28 2, 52 9 T 100 8 T 150 10 T 198 6"
         fill="none"
         stroke="currentColor"
-        strokeWidth="4"
+        strokeWidth="2"
         strokeLinecap="round"
       />
     </svg>
@@ -25,7 +25,7 @@ export function CircleScribble({ className = '' }: ScribbleProps) {
         d="M52 5 C 24 2, 5 16, 6 31 C 7 47, 25 57, 51 56 C 78 55, 96 43, 93 27 C 91 13, 71 3, 46 6"
         fill="none"
         stroke="currentColor"
-        strokeWidth="3.5"
+        strokeWidth="2"
         strokeLinecap="round"
       />
     </svg>
@@ -40,14 +40,14 @@ export function HandArrow({ className = '' }: ScribbleProps) {
         d="M2 13 C 18 8, 34 17, 48 11"
         fill="none"
         stroke="currentColor"
-        strokeWidth="3.5"
+        strokeWidth="2"
         strokeLinecap="round"
       />
       <path
         d="M40 4 L51 11 L39 18"
         fill="none"
         stroke="currentColor"
-        strokeWidth="3.5"
+        strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
       />

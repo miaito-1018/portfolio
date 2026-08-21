@@ -21,7 +21,7 @@ export default function Contact() {
         <Reveal delay={1}>
           <a
             href={`mailto:${EMAIL}`}
-            className="group mt-[clamp(2rem,5vw,3rem)] inline-flex items-center gap-[clamp(.8rem,2vw,1.5rem)] -rotate-1 font-hand text-[clamp(2.6rem,9vw,6.4rem)] leading-none"
+            className="group mt-[clamp(2rem,5vw,3rem)] inline-flex items-center gap-[clamp(.8rem,2vw,1.5rem)] -rotate-1 font-hand text-[clamp(3.2rem,11vw,8rem)] font-semibold leading-none"
           >
             <span className="transition-colors duration-300 group-hover:text-accent">LET'S TALK</span>
             <HandArrow className="h-[.4em] w-auto text-accent transition-transform duration-300 group-hover:translate-x-[.3em]" />
