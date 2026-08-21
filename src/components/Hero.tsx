@@ -20,6 +20,9 @@ export default function Hero() {
               水晶
             </Reveal>
           </h1>
+          <Reveal delay={2} className="mt-3">
+            <p className="font-mono text-[.8rem] uppercase tracking-[.2em] text-ink-faint">Mia Ito</p>
+          </Reveal>
           <Reveal delay={3}>
             <p className="mt-[clamp(1.6rem,4vw,2.6rem)] font-mono text-[clamp(.95rem,1.6vw,1.15rem)] text-ink-soft">
               Model <span className="mx-[.2em] text-accent">/</span> MC{' '}
